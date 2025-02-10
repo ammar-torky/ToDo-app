@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+
+    All ToDos
+
+{% endblock title %}
+
+{% block body %}
+
+    <ul>
+        {% for i in all_items%}
+        <li>{{i.text}}</li>
+        {% endfor %}
+
+    </ul>
+{% endblock body %}

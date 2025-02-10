@@ -1,0 +1,19 @@
+
+{% extends 'base.html' %}
+
+{% block title %}
+
+    New_To-Dos
+
+    
+{% endblock title %}
+
+{% block body %}
+<form method="post">
+    {% csrf_token %}
+    {{form}}
+    <input type="submit" value="add">
+</form>
+   
+
+{% endblock body %}

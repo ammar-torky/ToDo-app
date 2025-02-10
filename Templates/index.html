@@ -1,0 +1,17 @@
+
+{% extends 'base.html' %}
+
+{% block title %}
+
+    Index
+    
+{% endblock title %}
+
+{% block body %}
+
+<h1>Index Page</h1>
+
+   <a href="{% url 'new_todo'%}">New_ToDo</a> 
+   <br>
+   <a href="{% url 'alltodos'%}">All Todos</a>
+{% endblock body %}
