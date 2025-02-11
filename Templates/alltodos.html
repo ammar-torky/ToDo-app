@@ -10,9 +10,12 @@
 {% block body %}
 
     <ul>
-        {% for i in all_items%}
-        <li>{{i.text}}</li>
+        {% for todo_item in object_list%}
+        <li>{{todo_item.text|slice:50}} <a href="{% url 'todo_detail' todo_item.id %}"> View More</a></li>
         {% endfor %}
 
     </ul>
+
+    {% include 'pagination.html' %}
 {% endblock body %}
+

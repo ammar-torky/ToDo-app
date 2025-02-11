@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block title %}
+
+    More Details
+
+{% endblock title %}
+
+// to extends the body
+{% block body %}
+
+    <h3> {{ object.text }} </h3>
+    <a href="{% url 'edit_todo' object.id %}">Edit</a>
+    <a href="{% url 'delete_todo' object.id %}">Delete</a>
+
+
+
+{% endblock body %}

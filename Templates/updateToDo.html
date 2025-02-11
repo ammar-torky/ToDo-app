@@ -1,0 +1,21 @@
+
+{% extends 'base.html' %}
+
+{% block title %}
+
+    Update Todo
+
+    
+{% endblock title %}
+
+{% block body %}
+<h1>Edit The Todo Item</h1>
+<form method="post">
+    {% csrf_token %}
+    {{form}}
+    
+    <input type="submit" value="Edit">
+</form>
+   
+
+{% endblock body %}
